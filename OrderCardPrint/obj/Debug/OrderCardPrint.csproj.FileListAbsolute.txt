@@ -1,0 +1,1 @@
+G:\Projects\C#\OrderCardPrint\OrderCardPrint\OrderCardPrint\bin\Debug\OrderCardPrint.exe.config
