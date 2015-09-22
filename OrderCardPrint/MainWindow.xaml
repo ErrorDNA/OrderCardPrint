@@ -147,8 +147,22 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <ScrollViewer>
+        <Slider x:Name="sldZoom"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Maximum="200" Minimum="10" Value="100" />
+        <ScrollViewer Margin="0,36,0,0">
             <Border BorderBrush="DarkGray" BorderThickness="1" Height="1773" Width="1243" Margin="8">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.01" ScaleY="0.01"/>
+                        <ScaleTransform>
+                            <ScaleTransform.ScaleX>
+                                <Binding ElementName="sldZoom" Path="Value" Mode="OneWay"/>
+                            </ScaleTransform.ScaleX>
+                            <ScaleTransform.ScaleY>
+                                <Binding ElementName="sldZoom" Path="Value" Mode="OneWay"/>
+                            </ScaleTransform.ScaleY>
+                        </ScaleTransform>
+                    </TransformGroup>
+                </Border.RenderTransform>
                 <Canvas Height="1771" Width="1240">
                     <Canvas.Background>
                         <!-- <SolidColorBrush Color="#E5F3F3" /> -->
