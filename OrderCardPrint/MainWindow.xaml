@@ -5,11 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OrderCardPrint"
         mc:Ignorable="d"
-        Title="MainWindow" Height="442.396" Width="813.352">
+        Title="MainWindow" Height="350.396" Width="643.352">
+	<Grid>
+		<ScrollViewer />
 
-
-
-    <Grid>
-
-    </Grid>
+	</Grid>
 </Window>
