@@ -151,6 +151,7 @@
             <Border BorderBrush="DarkGray" BorderThickness="1" Height="1773" Width="1243" Margin="8">
                 <Canvas Height="1771" Width="1240">
                     <Canvas.Background>
+                        <!-- <SolidColorBrush Color="#E5F3F3" /> -->
                         <ImageBrush ImageSource="110021-1.jpg"  />
                     </Canvas.Background>
                     <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="481" Canvas.Top="332" />
@@ -184,6 +185,10 @@
 
                     <TextBlock Canvas.Left="30" Canvas.Top="400" Width="194" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Тип бумаги.</TextBlock>
                     <TextBlock Canvas.Left="30" Canvas.Top="499" Width="194" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Конструкция.</TextBlock>
+                    <TextBlock Canvas.Left="1016" Canvas.Top="302" Width="76" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Формат</TextBlock>
+                    <TextBlock Canvas.Left="804" Canvas.Top="302" Width="76" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Тираж</TextBlock>
+                    <TextBlock Canvas.Left="30" Canvas.Top="228" Width="194" Height="53" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,100,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Заказчик, его адрес, телефон.</TextBlock>
+                    <TextBlock Canvas.Left="30" Canvas.Top="188" Width="187" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Название заказа.</TextBlock>
                 </Canvas>
             </Border>
         </ScrollViewer>
