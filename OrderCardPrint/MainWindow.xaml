@@ -18,7 +18,6 @@
                     <ControlTemplate TargetType="{x:Type CheckBox}">
                         <BulletDecorator>
                             <BulletDecorator.Bullet>
-                                <!-- Width="{Binding RelativeSource={RelativeSource Self}, Path=Height, UpdateSourceTrigger=PropertyChanged}" -->
                                 <Grid
                                     Height="{TemplateBinding Height}"
                                     Width="{TemplateBinding Width}"
@@ -26,7 +25,6 @@
                                     MinWidth="30"
                                     ShowGridLines="False">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="4*" />
                                         <ColumnDefinition Width="1*" />
                                         <ColumnDefinition Width="1*" />
                                         <ColumnDefinition Width="4*" />
@@ -43,20 +41,26 @@
                                         <RowDefinition Height="4*" />
                                         <RowDefinition Height="1*" />
                                         <RowDefinition Height="1*" />
-                                        <RowDefinition Height="4*" />
                                     </Grid.RowDefinitions>
+
+                                    <Rectangle
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="5"
+                                        Grid.Row="2"
+                                        Grid.RowSpan="5"
+                                        Fill="White"/>
 
                                     <Border
                                         Name="MainBorder"
-                                        Grid.ColumnSpan="9"
-                                        Grid.RowSpan="9"
+                                        Grid.ColumnSpan="8"
+                                        Grid.RowSpan="8"
                                         CornerRadius="4"
                                         BorderThickness="1"
                                         Background="Transparent" />
 
                                     <Border
                                         Name="InnerBorder"
-                                        Grid.Column="1"
+                                        Grid.Column="0"
                                         Grid.ColumnSpan="5"
                                         Grid.Row="2"
                                         Grid.RowSpan="5"
@@ -65,35 +69,35 @@
 
                                     <Path
                                         Name="InnerPath"
-                                        Grid.Column="1"
+                                        Grid.Column="0"
                                         Grid.ColumnSpan="5"
                                         Grid.Row="2"
                                         Grid.RowSpan="5"
                                         Data="M31,5 L19.5,5 19.5,19.5 34.5,19.5 34.5,11.75"
                                         Stretch="Fill"
-                                        Stroke="#808080" />
+                                        Stroke="#2A7B68" />
 
                                     <Path
                                         Name="CheckMark"
-                                        Grid.Column="2"
+                                        Grid.Column="1"
                                         Grid.ColumnSpan="5"
                                         Grid.Row="1"
                                         Grid.RowSpan="5"
                                         Opacity="0"
-                                        Data="M9.07743946676476E-09,4.31805768640244L4.68740335877841,8.86361158398516C4.68740335877841,8.86361158398516,16.3281249985376,-2.42451336648723,16.3281249985376,-2.42451336648723L14.0622100581796,-4.77304938341948 4.68740335877846,4.31805791992662 2.22656251699567,1.93164208562579z"
-                                        Fill="#3babe3"
+                                        Data="M0,4.31805768640244L4.68740335877841,8.86361158398516C4.68740335877841,8.86361158398516,16.3281249985376,-2.42451336648723,16.3281249985376,-2.42451336648723L14.0622100581796,-4.77304938341948 4.68740335877846,4.31805791992662 2.22656251699567,1.93164208562579z"
+                                        Fill="#2A7B68"
                                         Stretch="Fill"
-                                        Stroke="#3babe3" />
+                                        Stroke="#2A7B68" />
 
                                     <Path
                                         Name="InderminateMark"
-                                        Grid.Column="3"
+                                        Grid.Column="2"
                                         Grid.Row="4"
                                         Data="M0,4 L1,5 5,1 4,0"
                                         Opacity="0"
                                         Stretch="Fill"
                                         StrokeThickness="0"
-                                        Fill="#808080" />
+                                        Fill="#2A7B68" />
                                 </Grid>
                             </BulletDecorator.Bullet>
                             <VisualStateManager.VisualStateGroups>
@@ -126,18 +130,12 @@
                         </BulletDecorator>
 
                         <ControlTemplate.Triggers>
-                            <Trigger Property="IsChecked" Value="True">
-                                <Setter TargetName="InnerBorder" Property="Visibility" Value="Collapsed" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="MainBorder" Property="Background" Value="#81d2eb" />
-                            </Trigger>
                             <Trigger Property="IsEnabled" Value="False">
-                                <Setter TargetName="CheckMark" Property="Fill" Value="#cccccc" />
-                                <Setter TargetName="CheckMark" Property="Stroke" Value="#cccccc" />
-                                <Setter TargetName="InnerPath" Property="Stroke" Value="#cccccc" />
-                                <Setter TargetName="InderminateMark" Property="Fill" Value="#cccccc" />
-                                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#cccccc" />
+                                <Setter TargetName="CheckMark" Property="Fill" Value="#2A7B68" />
+                                <Setter TargetName="CheckMark" Property="Stroke" Value="#2A7B68" />
+                                <Setter TargetName="InnerPath" Property="Stroke" Value="#2A7B68" />
+                                <Setter TargetName="InderminateMark" Property="Fill" Value="#2A7B68" />
+                                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#2A7B68" />
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -152,7 +150,24 @@
                     <Canvas.Background>
                         <ImageBrush ImageSource="110021-1.jpg"  />
                     </Canvas.Background>
-                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="65" HorizontalAlignment="Left" Width="65" Canvas.Left="466.5" Canvas.Top="333"/>
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="481" Canvas.Top="332" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="481" Canvas.Top="286" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="320" Canvas.Top="332" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="320" Canvas.Top="286" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="649" Canvas.Top="332" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="649" Canvas.Top="286" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="754" Canvas.Top="332" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="754" Canvas.Top="286" />
+
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="241" Canvas.Top="378" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="613" Canvas.Top="378" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="1025" Canvas.Top="376" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="1166" Canvas.Top="376" />
+
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="310" Canvas.Top="453" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="621" Canvas.Top="453" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="310" Canvas.Top="502" />
+                    <CheckBox VerticalAlignment="Top" Style="{StaticResource CheckBoxStyle}" Height="52" HorizontalAlignment="Left" Width="54" Canvas.Left="621" Canvas.Top="502" />
                 </Canvas>
             </Border>
         </ScrollViewer>
