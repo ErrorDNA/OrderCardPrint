@@ -10,7 +10,7 @@
     <Grid>
         <Slider x:Name="sldZoom"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Maximum="200" Minimum="10" Value="100" />
         <ScrollViewer Margin="0,36,0,0">
-            <Border BorderBrush="DarkGray" BorderThickness="1" Height="1773" Width="1243" Margin="8">
+            <Border BorderBrush="DarkGray" BorderThickness="1" Height="7084" Width="1243" Margin="8">
                 <Border.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="0.01" ScaleY="0.01"/>
@@ -24,8 +24,11 @@
                         </ScaleTransform>
                     </TransformGroup>
                 </Border.RenderTransform>
-                <Canvas Height="1771" Width="1240">
-                    <Frame Source="Controls/Page1.xaml"/>
+                <Canvas Height="7084" Width="1240">
+                    <Frame Source="Controls/Page1.xaml" />
+                    <Frame Source="Controls/Page2.xaml"  Margin="0, 1771, 0, 0" />
+                    <Frame Source="Controls/Page3.xaml"  Margin="0, 3542, 0, 0" />
+                    <Frame Source="Controls/Page4.xaml"  Margin="0, 5313, 0, 0" />
                 </Canvas>
             </Border>
         </ScrollViewer>

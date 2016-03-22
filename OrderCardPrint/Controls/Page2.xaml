@@ -1,0 +1,14 @@
+﻿<Page x:Class="OrderCardPrint.Controls.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="1771" d:DesignWidth="1240"
+	  FontFamily ="../Fonts/#Academy">
+    <Canvas Height="1771" Width="1240">
+        <Canvas.Background>
+            <ImageBrush ImageSource="../110021-2.jpg"  />
+        </Canvas.Background>
+    </Canvas>
+</Page>
