@@ -7,7 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Templates.xaml" />
-                <ResourceDictionary Source="CheckBox.xaml" />
+                <ResourceDictionary Source="CheckBoxStyle.xaml" />
+                <ResourceDictionary Source="TextBlockStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

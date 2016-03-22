@@ -10,40 +10,40 @@
         <Canvas.Background>
             <ImageBrush ImageSource="../110021-1.jpg"  />
         </Canvas.Background>
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="481" Canvas.Top="332" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="481" Canvas.Top="286" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="320" Canvas.Top="332" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="320" Canvas.Top="286" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="649" Canvas.Top="332" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="649" Canvas.Top="286" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="754" Canvas.Top="332" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="754" Canvas.Top="286" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="481" Canvas.Top="332" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="481" Canvas.Top="286" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="320" Canvas.Top="332" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="320" Canvas.Top="286" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="649" Canvas.Top="332" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="649" Canvas.Top="286" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="754" Canvas.Top="332" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="754" Canvas.Top="286" />
 
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="241" Canvas.Top="378" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="613" Canvas.Top="378" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="1025" Canvas.Top="376" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="1166" Canvas.Top="376" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="241" Canvas.Top="378" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="613" Canvas.Top="378" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1025" Canvas.Top="376" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1166" Canvas.Top="376" />
 
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="310" Canvas.Top="453" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="621" Canvas.Top="453" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="310" Canvas.Top="502" />
-        <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="621" Canvas.Top="502" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="310" Canvas.Top="453" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="621" Canvas.Top="453" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="310" Canvas.Top="502" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="621" Canvas.Top="502" />
 
-        <TextBlock Canvas.Left="237" Canvas.Top="302" Width="83" Height="36" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Тип сложности</TextBlock>
-        <TextBlock Canvas.Left="371" Canvas.Top="302" Width="110" Height="36" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Повторный, без изменений</TextBlock>
-        <TextBlock Canvas.Left="535" Canvas.Top="302" Width="113" Height="36" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Повторный, с изменениями</TextBlock>
-        <TextBlock Canvas.Left="694" Canvas.Top="309" Width="55" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Новый</TextBlock>
-        <TextBlock Canvas.Left="705" Canvas.Top="356" Width="41" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Роль</TextBlock>
-        <TextBlock Canvas.Left="572" Canvas.Top="356" Width="72" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Листовой</TextBlock>
-        <TextBlock Canvas.Left="379" Canvas.Top="356" Width="97" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Бесконечный</TextBlock>
-        <TextBlock Canvas.Left="207" Canvas.Top="356" Width="113" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Многослойный</TextBlock>
-        <TextBlock Canvas.Left="64" Canvas.Top="303" Width="102" Height="21" TextWrapping="WrapWithOverflow" FontSize="18.5" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="0,4,0,0" Background="{DynamicResource LocalLightGreen}">№ пред. зак.</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="237" Canvas.Top="302" Width="83" Height="36">Тип сложности</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="371" Canvas.Top="302" Width="110" Height="36">Повторный, без изменений</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="535" Canvas.Top="302" Width="113" Height="36">Повторный, с изменениями</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="694" Canvas.Top="309" Width="55">Новый</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="705" Canvas.Top="356" Width="41">Роль</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="572" Canvas.Top="356" Width="72">Листовой</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="379" Canvas.Top="356" Width="97">Бесконечный</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="207" Canvas.Top="356" Width="113">Многослойный</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="64" Canvas.Top="303" Width="102" Height="21">№ пред. зак.</TextBlock>
 
-        <TextBlock Canvas.Left="30" Canvas.Top="400" Width="194" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Тип бумаги.</TextBlock>
-        <TextBlock Canvas.Left="30" Canvas.Top="499" Width="194" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Конструкция.</TextBlock>
-        <TextBlock Canvas.Left="1016" Canvas.Top="302" Width="76" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Формат</TextBlock>
-        <TextBlock Canvas.Left="804" Canvas.Top="302" Width="76" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Тираж</TextBlock>
-        <TextBlock Canvas.Left="30" Canvas.Top="228" Width="194" Height="53" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,100,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Заказчик, его адрес, телефон.</TextBlock>
-        <TextBlock Canvas.Left="30" Canvas.Top="188" Width="187" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Название заказа.</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockSubHeaderStyle}" Canvas.Left="30" Canvas.Top="400" Width="194">Тип бумаги.</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockSubHeaderStyle}" Canvas.Left="30" Canvas.Top="499" Width="194">Конструкция.</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockSubHeaderStyle}" Canvas.Left="1016" Canvas.Top="302" Width="76">Формат</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockSubHeaderStyle}" Canvas.Left="804" Canvas.Top="302" Width="76">Тираж</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockSubHeaderStyle}" Canvas.Left="30" Canvas.Top="228" Width="194" Height="53" Padding="2,4,100,0">Заказчик, его адрес, телефон.</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockSubHeaderStyle}" Canvas.Left="30" Canvas.Top="188" Width="187">Название заказа.</TextBlock>
     </Canvas>
 </Page>
