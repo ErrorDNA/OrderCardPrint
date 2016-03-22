@@ -6,150 +6,11 @@
         xmlns:local="clr-namespace:OrderCardPrint"
         mc:Ignorable="d"
         Title="MainWindow" Height="1000" Width="1294"
-        WindowStartupLocation="CenterScreen"
-        FontFamily ="./Fonts/#Academy">
-    <Window.Resources>
-        <Style x:Key="CheckBoxStyle" TargetType="{x:Type CheckBox}">
-            <Setter Property="SnapsToDevicePixels" Value="true" />
-            <Setter Property="OverridesDefaultStyle" Value="true" />
-            <Setter Property="Height" Value="30" />
-            <Setter Property="FocusVisualStyle" Value="{DynamicResource MyFocusVisualStyte}" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type CheckBox}">
-                        <BulletDecorator>
-                            <BulletDecorator.Bullet>
-                                <Grid
-                                    Height="{TemplateBinding Height}"
-                                    Width="{TemplateBinding Width}"
-                                    MinHeight="30"
-                                    MinWidth="30"
-                                    ShowGridLines="False">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="4*" />
-                                        <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="2*" />
-                                        <ColumnDefinition Width="2*" />
-                                    </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="3*" />
-                                        <RowDefinition Height="1*" />
-                                        <RowDefinition Height="1*" />
-                                        <RowDefinition Height="1*" />
-                                        <RowDefinition Height="4*" />
-                                        <RowDefinition Height="1*" />
-                                        <RowDefinition Height="1*" />
-                                    </Grid.RowDefinitions>
-
-                                    <Rectangle
-                                        Grid.Column="0"
-                                        Grid.ColumnSpan="5"
-                                        Grid.Row="2"
-                                        Grid.RowSpan="5"
-                                        Fill="White"/>
-
-                                    <Border
-                                        Name="MainBorder"
-                                        Grid.Column="0"
-                                        Grid.ColumnSpan="7"
-                                        Grid.Row="0"
-                                        Grid.RowSpan="7"
-                                        CornerRadius="4"
-                                        BorderThickness="1"
-                                        Background="Transparent" />
-
-                                    <Border
-                                        Name="InnerBorder"
-                                        Grid.Column="0"
-                                        Grid.ColumnSpan="5"
-                                        Grid.Row="2"
-                                        Grid.RowSpan="5"
-                                        BorderThickness="2"
-                                        BorderBrush="{StaticResource LocalDarkGreen}" />
-
-                                    <Path
-                                        Name="InnerPath"
-                                        Grid.Column="0"
-                                        Grid.ColumnSpan="5"
-                                        Grid.Row="2"
-                                        Grid.RowSpan="5"
-                                        Data="M31,5 L19.5,5 19.5,19.5 34.5,19.5 34.5,11.75"
-                                        Stretch="Fill"
-                                        Stroke="{StaticResource LocalDarkGreen}" />
-
-                                    <Path
-                                        Name="CheckMark"
-                                        Grid.Column="1"
-                                        Grid.ColumnSpan="5"
-                                        Grid.Row="1"
-                                        Grid.RowSpan="5"
-                                        Opacity="0"
-                                        Data="M0,4.31805768640244L4.68740335877841,8.86361158398516C4.68740335877841,8.86361158398516,16.3281249985376,-2.42451336648723,16.3281249985376,-2.42451336648723L14.0622100581796,-4.77304938341948 4.68740335877846,4.31805791992662 2.22656251699567,1.93164208562579z"
-                                        Fill="Black"
-                                        Stretch="Fill"
-                                        Stroke="Black" />
-
-                                    <Path
-                                        Name="InderminateMark"
-                                        Grid.Column="2"
-                                        Grid.Row="4"
-                                        Data="M0,4 L1,5 5,1 4,0"
-                                        Opacity="0"
-                                        Stretch="Fill"
-                                        StrokeThickness="0"
-                                        Fill="Black" />
-                                </Grid>
-                            </BulletDecorator.Bullet>
-                            <VisualStateManager.VisualStateGroups>
-                                <VisualStateGroup x:Name="CheckStates">
-                                    <VisualState x:Name="Checked">
-                                        <Storyboard>
-                                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                                             Storyboard.TargetName="CheckMark" Duration="0:0:0.2" To="1" />
-                                        </Storyboard>
-                                    </VisualState>
-                                    <VisualState x:Name="Unchecked" >
-                                        <Storyboard>
-                                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                                             Storyboard.TargetName="CheckMark" Duration="0:0:0.2" To="0" />
-                                        </Storyboard>
-                                    </VisualState>
-                                    <VisualState x:Name="Indeterminate">
-                                        <Storyboard>
-                                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                                             Storyboard.TargetName="InderminateMark" Duration="0:0:0.2" To="1" />
-                                        </Storyboard>
-                                    </VisualState>
-                                </VisualStateGroup>
-                            </VisualStateManager.VisualStateGroups>
-                            <ContentPresenter
-                                Margin="4,0,4,0"
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Left"
-                                RecognizesAccessKey="True" />
-                        </BulletDecorator>
-
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsEnabled" Value="False">
-                                <Setter TargetName="CheckMark" Property="Fill" Value="{StaticResource LocalDarkGreen}" />
-                                <Setter TargetName="CheckMark" Property="Stroke" Value="{StaticResource LocalDarkGreen}" />
-                                <Setter TargetName="InnerPath" Property="Stroke" Value="{StaticResource LocalDarkGreen}" />
-                                <Setter TargetName="InderminateMark" Property="Fill" Value="{StaticResource LocalDarkGreen}" />
-                                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="{StaticResource LocalDarkGreen}" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Slider x:Name="sldZoom"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Maximum="200" Minimum="10" Value="100" />
         <ScrollViewer Margin="0,36,0,0">
-            <Border BorderBrush="DarkGray" BorderThickness="1" Height="1773" Width="1243" Margin="8">
+            <Border BorderBrush="DarkGray" BorderThickness="1" Height="7084" Width="1243" Margin="8">
                 <Border.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="0.01" ScaleY="0.01"/>
@@ -163,46 +24,11 @@
                         </ScaleTransform>
                     </TransformGroup>
                 </Border.RenderTransform>
-                <Canvas Height="1771" Width="1240">
-                    <Canvas.Background>
-                        <!-- <SolidColorBrush Color="#E5F3F3" /> -->
-                        <ImageBrush ImageSource="110021-1.jpg"  />
-                    </Canvas.Background>
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="481" Canvas.Top="332" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="481" Canvas.Top="286" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="320" Canvas.Top="332" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="320" Canvas.Top="286" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="649" Canvas.Top="332" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="649" Canvas.Top="286" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="754" Canvas.Top="332" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="754" Canvas.Top="286" />
-
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="241" Canvas.Top="378" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="613" Canvas.Top="378" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="1025" Canvas.Top="376" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="1166" Canvas.Top="376" />
-
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="310" Canvas.Top="453" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="621" Canvas.Top="453" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="310" Canvas.Top="502" />
-                    <CheckBox Style="{StaticResource CheckBoxStyle}" Height="52" Width="54" Canvas.Left="621" Canvas.Top="502" />
-
-                    <TextBlock Canvas.Left="237" Canvas.Top="302" Width="83" Height="36" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Тип сложности</TextBlock>
-                    <TextBlock Canvas.Left="371" Canvas.Top="302" Width="110" Height="36" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Повторный, без изменений</TextBlock>
-                    <TextBlock Canvas.Left="535" Canvas.Top="302" Width="113" Height="36" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Повторный, с изменениями</TextBlock>
-                    <TextBlock Canvas.Left="694" Canvas.Top="309" Width="55" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Новый</TextBlock>
-                    <TextBlock Canvas.Left="705" Canvas.Top="356" Width="41" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Роль</TextBlock>
-                    <TextBlock Canvas.Left="572" Canvas.Top="356" Width="72" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Листовой</TextBlock>
-                    <TextBlock Canvas.Left="379" Canvas.Top="356" Width="97" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Бесконечный</TextBlock>
-                    <TextBlock Canvas.Left="207" Canvas.Top="356" Width="113" Height="25" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Background="{DynamicResource LocalLightGreen}" Padding="0,4,0,0">Многослойный</TextBlock>
-                    <TextBlock Canvas.Left="64" Canvas.Top="303" Width="102" Height="21" TextWrapping="WrapWithOverflow" FontSize="18.5" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="0,4,0,0" Background="{DynamicResource LocalLightGreen}">№ пред. зак.</TextBlock>
-
-                    <TextBlock Canvas.Left="30" Canvas.Top="400" Width="194" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Тип бумаги.</TextBlock>
-                    <TextBlock Canvas.Left="30" Canvas.Top="499" Width="194" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Конструкция.</TextBlock>
-                    <TextBlock Canvas.Left="1016" Canvas.Top="302" Width="76" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Формат</TextBlock>
-                    <TextBlock Canvas.Left="804" Canvas.Top="302" Width="76" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Тираж</TextBlock>
-                    <TextBlock Canvas.Left="30" Canvas.Top="228" Width="194" Height="53" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,100,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Заказчик, его адрес, телефон.</TextBlock>
-                    <TextBlock Canvas.Left="30" Canvas.Top="188" Width="187" Height="22" TextWrapping="WrapWithOverflow" FontSize="18.75" LineHeight="16" LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource LocalDarkGreen}" Padding="2,4,0,0" FontWeight="Bold" Background="{DynamicResource LocalDarkToLightGreen}">Название заказа.</TextBlock>
+                <Canvas Height="7084" Width="1240">
+                    <Frame Source="Controls/Page1.xaml" />
+                    <Frame Source="Controls/Page2.xaml"  Margin="0, 1771, 0, 0" />
+                    <Frame Source="Controls/Page3.xaml"  Margin="0, 3542, 0, 0" />
+                    <Frame Source="Controls/Page4.xaml"  Margin="0, 5313, 0, 0" />
                 </Canvas>
             </Border>
         </ScrollViewer>
