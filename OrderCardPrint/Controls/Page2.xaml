@@ -10,5 +10,21 @@
         <Canvas.Background>
             <ImageBrush ImageSource="../110021-2.jpg"  />
         </Canvas.Background>
+
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="723" Canvas.Top="1016" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="850" Canvas.Top="1016" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="991" Canvas.Top="1016" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="992" Canvas.Top="1169" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1176" Canvas.Top="1169" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="154" Canvas.Top="1493" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="154" Canvas.Top="1543" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="154" Canvas.Top="1597" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="154" Canvas.Top="1648" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1154" Canvas.Top="659" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1154" Canvas.Top="717" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1154" Canvas.Top="775" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1154" Canvas.Top="833" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1154" Canvas.Top="887" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="1128" Canvas.Top="1016" />
     </Canvas>
 </Page>

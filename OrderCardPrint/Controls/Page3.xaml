@@ -10,5 +10,20 @@
         <Canvas.Background>
             <ImageBrush ImageSource="../110021-3.jpg"  />
         </Canvas.Background>
+
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="407" Canvas.Top="1002" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="407" Canvas.Top="1042" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="620" Canvas.Top="1002" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="620" Canvas.Top="1042" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="136" Canvas.Top="645" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="136" Canvas.Top="703" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="136" Canvas.Top="760" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="857" Canvas.Top="76" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="967" Canvas.Top="76" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="968" Canvas.Top="124" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="857" Canvas.Top="124" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="28" Canvas.Top="1370" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="28" Canvas.Top="1407" />
+        <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="28" Canvas.Top="1444" />
     </Canvas>
 </Page>
