@@ -25,5 +25,9 @@
         <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="28" Canvas.Top="1370" />
         <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="28" Canvas.Top="1407" />
         <CheckBox Style="{StaticResource CheckBoxStyle}" Canvas.Left="28" Canvas.Top="1444" />
+
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="68" Canvas.Top="1396">Подложка</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="93" Canvas.Top="1433">Без печати</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" Canvas.Left="68" Canvas.Top="1471">С печатью</TextBlock>
     </Canvas>
 </Page>
